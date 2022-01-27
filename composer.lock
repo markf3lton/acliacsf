@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abc60dfc827fcd21957242a6da20c75a",
+    "content-hash": "c793dcc248b2358b632b7567b37142f7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1282,6 +1282,317 @@
             },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
+        },
+        {
+            "name": "drupal/acsf",
+            "version": "2.69.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/acsf.git",
+                "reference": "8.x-2.69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-2.69.zip",
+                "reference": "8.x-2.69",
+                "shasum": "649186e899e719f8886ab385706bf56e6afe1183"
+            },
+            "require": {
+                "drupal/acsf_duplication": "*",
+                "drupal/acsf_theme": "*",
+                "drupal/acsf_variables": "*",
+                "drupal/core": "^8 || ^9",
+                "ext-json": "*"
+            },
+            "require-dev": {
+                "acquia/coding-standards": "^0.4.0",
+                "drupal/acsf_variables": "*",
+                "drupal/samlauth": "^2.0.0-alpha1",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.69",
+                    "datestamp": "1612957028",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-2.x": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\acsf\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia",
+                    "homepage": "https://www.drupal.org/user/14023",
+                    "email": "support@acquia.com"
+                },
+                {
+                    "name": "Rok Žlender",
+                    "homepage": "https://www.drupal.org/user/61873"
+                },
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
+                {
+                    "name": "acquia.sf.ci",
+                    "homepage": "https://www.drupal.org/user/3285763"
+                },
+                {
+                    "name": "attila.fekete",
+                    "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "drabik",
+                    "homepage": "https://www.drupal.org/user/928682"
+                },
+                {
+                    "name": "glitchinfinity",
+                    "homepage": "https://www.drupal.org/user/3603140"
+                },
+                {
+                    "name": "nagba",
+                    "homepage": "https://www.drupal.org/user/21231"
+                },
+                {
+                    "name": "nikgregory",
+                    "homepage": "https://www.drupal.org/user/419643"
+                },
+                {
+                    "name": "roderik",
+                    "homepage": "https://www.drupal.org/user/8841"
+                }
+            ],
+            "description": "Connects a site with Acquia Cloud Site Factory.",
+            "homepage": "https://www.drupal.org/project/acsf",
+            "support": {
+                "source": "https://git.drupalcode.org/project/acsf"
+            }
+        },
+        {
+            "name": "drupal/acsf_duplication",
+            "version": "2.69.0",
+            "require": {
+                "drupal/acsf": "^2",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.69",
+                    "datestamp": "1612957028",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alan Evans",
+                    "homepage": "https://www.drupal.org/user/14023"
+                },
+                {
+                    "name": "Rok Žlender",
+                    "homepage": "https://www.drupal.org/user/61873"
+                },
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
+                {
+                    "name": "acquia.sf.ci",
+                    "homepage": "https://www.drupal.org/user/3285763"
+                },
+                {
+                    "name": "attila.fekete",
+                    "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "drabik",
+                    "homepage": "https://www.drupal.org/user/928682"
+                },
+                {
+                    "name": "glitchinfinity",
+                    "homepage": "https://www.drupal.org/user/3603140"
+                },
+                {
+                    "name": "nagba",
+                    "homepage": "https://www.drupal.org/user/21231"
+                },
+                {
+                    "name": "nikgregory",
+                    "homepage": "https://www.drupal.org/user/419643"
+                },
+                {
+                    "name": "roderik",
+                    "homepage": "https://www.drupal.org/user/8841"
+                }
+            ],
+            "description": "Helper module for duplicating Acquia Cloud Site Factory sites.",
+            "homepage": "https://www.drupal.org/project/acsf",
+            "support": {
+                "source": "https://git.drupalcode.org/project/acsf"
+            }
+        },
+        {
+            "name": "drupal/acsf_theme",
+            "version": "2.69.0",
+            "require": {
+                "drupal/acsf": "^2",
+                "drupal/acsf_variables": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.69",
+                    "datestamp": "1612957028",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alan Evans",
+                    "homepage": "https://www.drupal.org/user/14023"
+                },
+                {
+                    "name": "Rok Žlender",
+                    "homepage": "https://www.drupal.org/user/61873"
+                },
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
+                {
+                    "name": "acquia.sf.ci",
+                    "homepage": "https://www.drupal.org/user/3285763"
+                },
+                {
+                    "name": "attila.fekete",
+                    "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "drabik",
+                    "homepage": "https://www.drupal.org/user/928682"
+                },
+                {
+                    "name": "glitchinfinity",
+                    "homepage": "https://www.drupal.org/user/3603140"
+                },
+                {
+                    "name": "nagba",
+                    "homepage": "https://www.drupal.org/user/21231"
+                },
+                {
+                    "name": "nikgregory",
+                    "homepage": "https://www.drupal.org/user/419643"
+                },
+                {
+                    "name": "roderik",
+                    "homepage": "https://www.drupal.org/user/8841"
+                }
+            ],
+            "description": "Handles VCS-based themes on Acquia Cloud Site Factory.",
+            "homepage": "https://www.drupal.org/project/acsf",
+            "support": {
+                "source": "https://git.drupalcode.org/project/acsf"
+            }
+        },
+        {
+            "name": "drupal/acsf_variables",
+            "version": "2.69.0",
+            "require": {
+                "drupal/acsf": "^2",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.69",
+                    "datestamp": "1612957028",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alan Evans",
+                    "homepage": "https://www.drupal.org/user/14023"
+                },
+                {
+                    "name": "Rok Žlender",
+                    "homepage": "https://www.drupal.org/user/61873"
+                },
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
+                {
+                    "name": "acquia.sf.ci",
+                    "homepage": "https://www.drupal.org/user/3285763"
+                },
+                {
+                    "name": "attila.fekete",
+                    "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "drabik",
+                    "homepage": "https://www.drupal.org/user/928682"
+                },
+                {
+                    "name": "glitchinfinity",
+                    "homepage": "https://www.drupal.org/user/3603140"
+                },
+                {
+                    "name": "nagba",
+                    "homepage": "https://www.drupal.org/user/21231"
+                },
+                {
+                    "name": "nikgregory",
+                    "homepage": "https://www.drupal.org/user/419643"
+                },
+                {
+                    "name": "roderik",
+                    "homepage": "https://www.drupal.org/user/8841"
+                }
+            ],
+            "description": "Stores sensitive variables in a single place for easy scrubbing.",
+            "homepage": "https://www.drupal.org/project/acsf",
+            "support": {
+                "source": "https://git.drupalcode.org/project/acsf"
+            }
         },
         {
             "name": "drupal/core",
@@ -4160,16 +4471,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v5.4.0",
+            "version": "v5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "d2f29dac98e96a98be467627bd49c2efb1bc2590"
+                "reference": "e77046c252be48c48a40816187ed527703c8f76c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/d2f29dac98e96a98be467627bd49c2efb1bc2590",
-                "reference": "d2f29dac98e96a98be467627bd49c2efb1bc2590",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e77046c252be48c48a40816187ed527703c8f76c",
+                "reference": "e77046c252be48c48a40816187ed527703c8f76c",
                 "shasum": ""
             },
             "require": {
@@ -4203,7 +4514,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.4.0"
+                "source": "https://github.com/symfony/finder/tree/v5.4.2"
             },
             "funding": [
                 {
@@ -4219,7 +4530,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-28T15:25:38+00:00"
+            "time": "2021-12-15T11:06:13+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -4966,7 +5277,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -5022,7 +5333,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -5042,16 +5353,16 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010"
+                "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fba8933c384d6476ab14fb7b8526e5287ca7e010",
-                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/cc5db0e22b3cb4111010e48785a97f670b350ca5",
+                "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5",
                 "shasum": ""
             },
             "require": {
@@ -5101,7 +5412,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -5117,7 +5428,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-06-05T21:20:04+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
